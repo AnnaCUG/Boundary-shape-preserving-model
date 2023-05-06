@@ -1,0 +1,17 @@
+numpy
+scipy
+Pillow
+cython
+matplotlib
+scikit-image
+tensorflow>=2.0.0,<=2.1.0
+opencv-python
+h5py
+imgaug
+IPython[all]
+
+
+import numpy as np
+for i in range(17,58):
+	m = np.savetxt('D:/HAN/Mask_RCNN_PointRend_RNN/feature_map/boundary'+str(i+2)+'.csv',batch_outs[9][0,i],delimiter=',')
+	n = np.savetxt('D:/HAN/Mask_RCNN_PointRend_RNN/feature_map/vertices'+str(i+2)+'.csv',batch_outs[10][0,i],delimiter=',')
